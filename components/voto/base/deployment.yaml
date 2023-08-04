@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: voto
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-kvvf-tenant/byoc-app-vwcx/voto@sha256:6a5702d407719dcb8ca02b6465d4982b0c5d7b325d71f94e1ccb145391dd542f
         name: my-java-quarkus
         ports:
         - containerPort: 8081
