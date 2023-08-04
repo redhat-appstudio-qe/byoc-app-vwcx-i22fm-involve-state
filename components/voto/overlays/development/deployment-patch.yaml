@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: voto
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-kvvf-tenant/byoc-app-vwcx/voto@sha256:6a5702d407719dcb8ca02b6465d4982b0c5d7b325d71f94e1ccb145391dd542f
+        name: my-java-quarkus
+        resources: {}
+status: {}
